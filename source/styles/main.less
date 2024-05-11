@@ -1,0 +1,26 @@
+@import "variaveis.less";
+@import "mapas.less";
+
+@breakpointMobile: ~"(max-width: 767px)";
+
+body {
+    background-color: #colors[backgroundColor];
+    color: #colors[textColor];
+
+    @media @breakpointMobile {
+        background-color: #colors[mobileColor];
+    }
+
+    div {
+        margin: auto;
+        border: 1px black solid;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+}
